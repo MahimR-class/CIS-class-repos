@@ -1,1 +1,26 @@
+import os
+from PIL import Image
 
+def introduce_yourself():
+    name = "Mahtasibur Rashid. I also go by Mahim."
+    pronoun = "He/him"
+    role = "CIS Student at Baruch College with a minor on New Media Arts"
+    interests = ["Technology", "Art", "Gaming"]
+
+    print("Hi there! My name is", name)
+    print("My pronouns are", pronoun)
+    print("I’m currently a", role)
+    print("My main interests include:", ", ".join(interests))
+    print("Nice to meet you! ")
+
+    selfie_path = "selfie.jpg" 
+    img = Image.open(selfie_path)
+    img.show()
+
+
+
+def main():
+    introduce_yourself()
+
+if __name__ == "__main__":
+    main()
